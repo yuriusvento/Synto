@@ -145,6 +145,27 @@
       text-align: center;
     }
 
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer a {
+      display: inline-block;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.18);
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .footer a:hover {
+      color: var(--fg);
+      border-color: rgba(0,0,0,0.4);
+    }
+
     @media (max-width: 640px) {
       .wrap {
         padding: 48px 0;
@@ -307,7 +328,12 @@
       </p>
     </section>
 
-    <div class="footer">© Syntō</div>
+    <div class="footer">
+      <div>© Syntō</div>
+      <div class="footer-links">
+        <a href="faq_pt.html">FAQ · PT</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
