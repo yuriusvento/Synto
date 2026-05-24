@@ -1,323 +1,338 @@
 <!doctype html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>The Manifesto of the Synt&#333; Age &#8212; Synt&#333;</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-    <style>
-          :root {
-                  --fg: #111;
-                  --muted: #666;
-                  --bg: #ffffff;
-                  --border: rgba(0,0,0,0.15);
-          }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Manifesto of the Synt&#333; Age &#8212; Synt&#333;</title>
 
-          * {
-                  box-sizing: border-box;
-          }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-          html,
-          body {
-                  min-height: 100%;
-                  margin: 0;
-          }
+  <style>
+    :root {
+      --fg: #111;
+      --muted: #666;
+      --bg: #ffffff;
+      --border: rgba(0,0,0,0.15);
+    }
 
-          body {
-                  background: var(--bg);
-                  color: var(--fg);
-                  display: flex;
-                  justify-content: center;
-                  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
-                                       "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                  font-weight: 400;
-                  letter-spacing: -0.01em;
-          }
+    * {
+      box-sizing: border-box;
+    }
 
-          .wrap {
-                  width: min(920px, 92vw);
-                  padding: 64px 0;
-                  text-align: center;
-          }
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
 
-          h1 {
-                  margin: 0 0 12px 0;
-                  font-size: clamp(42px, 7vw, 82px);
-                  font-weight: 700;
-                  letter-spacing: -0.035em;
-                  line-height: 1;
-          }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      display: flex;
+      justify-content: center;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
 
-          .subtitle {
-                  margin-bottom: 28px;
-                  font-size: 13px;
-                  letter-spacing: 0.2em;
-                  text-transform: uppercase;
-                  color: var(--muted);
-          }
+    .wrap {
+      width: min(920px, 92vw);
+      padding: 64px 0;
+      text-align: center;
+    }
 
-          .links {
-                  display: flex;
-                  justify-content: center;
-                  gap: 14px;
-                  flex-wrap: wrap;
-                  margin-bottom: 40px;
-          }
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1;
+    }
 
-          .links a {
-                  text-decoration: none;
-                  color: var(--fg);
-                  border: 1px solid var(--border);
-                  padding: 10px 16px;
-                  border-radius: 999px;
-                  font-size: 14px;
-                  font-weight: 500;
-                  transition: border-color 0.15s ease, transform 0.15s ease;
-          }
+    .subtitle {
+      margin-bottom: 28px;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
 
-          .links a:hover {
-                  border-color: rgba(0,0,0,0.35);
-                  transform: translateY(-1px);
-          }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
 
-          .synopsis {
-                  max-width: 840px;
-                  margin: 0 auto;
-                  font-size: 17px;
-                  line-height: 1.75;
-                  color: #222;
-                  text-align: left;
-          }
+    .links a {
+      text-decoration: none;
+      color: var(--fg);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
 
-          .synopsis p {
-                  margin: 0 0 22px 0;
-          }
+    .links a:hover {
+      border-color: rgba(0,0,0,0.35);
+      transform: translateY(-1px);
+    }
 
-          .synopsis b {
-                  font-weight: 600;
-          }
+    .synopsis {
+      max-width: 840px;
+      margin: 0 auto;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #222;
+      text-align: left;
+    }
 
-          .lead {
-                  text-align: center;
-          }
+    .synopsis p {
+      margin: 0 0 22px 0;
+    }
 
-          .points {
-                  list-style: none;
-                  margin: 0 0 30px 0;
-                  padding: 0;
-          }
+    .synopsis b {
+      font-weight: 600;
+    }
 
-          .points li {
-                  border-top: 1px solid var(--border);
-                  padding: 18px 0;
-          }
+    .lead {
+      text-align: center;
+    }
 
-          .points li:last-child {
-                  border-bottom: 1px solid var(--border);
-          }
+    .points {
+      list-style: none;
+      margin: 0 0 30px 0;
+      padding: 0;
+    }
 
-          .manifest-title {
-                  margin: 42px 0 8px 0;
-                  font-size: clamp(28px, 4vw, 44px);
-                  font-weight: 700;
-                  letter-spacing: -0.03em;
-                  line-height: 1.1;
-                  text-align: center;
-          }
+    .points li {
+      border-top: 1px solid var(--border);
+      padding: 18px 0;
+    }
 
-          .date {
-                  margin-bottom: 34px;
-                  font-size: 13px;
-                  letter-spacing: 0.16em;
-                  text-transform: uppercase;
-                  color: var(--muted);
-                  text-align: center;
-          }
+    .points li:last-child {
+      border-bottom: 1px solid var(--border);
+    }
 
-          .footer {
-                  margin-top: 36px;
-                  font-size: 13px;
-                  color: var(--muted);
-                  text-align: center;
-          }
+    .manifest-title {
+      margin: 42px 0 8px 0;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      text-align: center;
+    }
 
-          @media (max-width: 640px) {
-                  .wrap {
-                            padding: 48px 0;
-                  }
+    .date {
+      margin-bottom: 34px;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+    }
 
-                  .synopsis {
-                            font-size: 16px;
-                            line-height: 1.68;
-                  }
-          }
-        </style>
-  </head>
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
 
-  <body>
-      <main class="wrap">
-            <h1>The Manifesto of the Synt&#333; Age</h1>
-          <div class="subtitle">Synt&#333; &#183; entry into the system</div>div>
-      
-          <nav class="links">
-                <a href="https://t.me/syntoera" target="_blank" rel="noopener">Telegram &#183; @syntoera</a>a>
-                <a href="https://yuriusvento.github.io/syntopolis/" target="_blank" rel="noopener">
-                        Website &#183; Texts & Documents
-                </a>a>
-                <a href="manifest_ru.html">&#1056;&#1091;&#1089;&#1089;&#1082;&#1072;&#1103; &#1074;&#1077;&#1088;&#1089;&#1080;&#1103;</a>a>
-          </nav>nav>
-      
-          <section class="synopsis">
-                <p class="lead">
-                  <b>The Manifesto of the Synt&#333; Age</b> is the entry into the system, the start screen of the
-                  operating system of a new society. It answers the question: why must humanity leave the model
-                  of the struggle for survival and transition to a model of Synt&#333;, pleasure, growth, and
-                  co-belonging?
-                </p>p>
-          
-                <p><b>The Manifesto establishes the following:</b>b></p>
-          
-                <ul class="points">
-                        <li>
-                                    the human being ceases to be a consumer of resources and a cog in production, and becomes
-                                    aware of oneself as a <b>cell of the unified organism of humanity</b>;
-                        </li>
-                          <li>
-                                      the foundation of life becomes the pursuit of pleasure in its highest sense:
-                                      <b>love, ag&#225;pe &#8212; &#7936;&#947;&#940;&#960;&#951;</b>, the transmission of knowledge, creation, and participation
-                          in the joy of others;
-                          </li>
-                        <li>
-                          <b>Synt&#333;polis</b> is a step toward the next stage of evolution, not a utopian fantasy.
-                          The function of the Manifesto is an emotional, semantic, and value-based initialization.
-                          Through it, a person first comes into contact with the concept of Synt&#333; as inner consent
-                          and sees that a society is possible in which higher pleasure becomes the norm, not the
-                          exception;
-                        </li>
-                        <li>
-                                    <b>the Synt&#333; Age</b>b> is the next stage of evolution, not a utopian fantasy.
-                        </li>
-                </ul>ul>
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
 
-                  <p>
-                            All other documents of the <b>Synt&#333; Age</b> and <b>Synt&#333;polis</b> must be a logical continuation
-                            of the Manifesto and must not contradict its spirit.
-                  </p>
+    .footer a {
+      display: inline-block;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.18);
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
 
-                  <h2 class="manifest-title">The Manifesto of the Synt&#333; Age / Synt&#333;</h2>
-                  <div class="date">Synt&#333;polis &#183; 26 Dec 2025</div>div>
+    .footer a:hover {
+      color: var(--fg);
+      border-color: rgba(0,0,0,0.4);
+    }
 
-                  <p>
-                            Humanity has entered a phase of extreme intensification of the global political and economic
-                            crisis. Models born in an era of struggle for power, resources, and influence have exhausted
-                            their developmental potential and are increasingly less capable of providing people with a
-                            sense of security, justice, and future perspective. Local and global conflicts, inequality,
-                            the fragmentation of societies, and destructive informational noise show that the historically
-                            inherited forms of organizing collective human existence no longer correspond to the scale of
-                            the challenges and the level of accumulated knowledge.
-                  </p>
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 48px 0;
+      }
 
-                  <p>
-                            At the same time, we live in a unique moment in the history of humanity. For the first time,
-                            the entire globe has been technically united into a single whole: information networks, the
-                            global economy, logistics, and instant communication technologies have transformed the planet
-                            into a continuously connected system. Yet this unity remains primarily technical. Humanity
-                            still has no common conceptual foundation, no shared image of the future, and no agreed unified
-                            ethics corresponding to this new level of interconnectedness and mutual dependence.
-                  </p>
+      .synopsis {
+        font-size: 16px;
+        line-height: 1.68;
+      }
+    }
+  </style>
+</head>
 
-                  <p>
-                            It is precisely at this historical moment that a window of opportunity opens. Before us stands
-                            an unprecedented task and privilege: to use the experience of all previous systems &#8212; religious,
-                            philosophical, political, economic, and cultural &#8212; not as a field of endless dispute, but as a
-                            dataset, as an accumulated library of attempts to build a just and meaningful society. We can
-                            regard past models as stages in the evolution of a single experiment and, on this basis, form
-                            a new, integral system for organizing the human community.
-                  </p>
+<body>
+  <main class="wrap">
+    <h1>The Manifesto of the Synt&#333; Age</h1>
+    <div class="subtitle">Synt&#333; &#183; entry into the system</div>
 
-                  <p>
-                            Today humanity possesses open information, the scientific method, and technologies of
-                            collective thinking that allow this choice to be made consciously. Under conditions of such
-                            transparency and accumulated experience, the only justified path becomes the path of science
-                            and evolution &#8212; a path based on verifiable knowledge, honest analysis of errors, and the
-                            ability to change structures when data reveal their failure. This path presupposes the use
-                            of all the intellectual and creative resources of humanity not for systems to struggle against
-                            one another, but for the transition to the next level of organizing life.
-                  </p>
+    <nav class="links">
+      <a href="https://t.me/syntoera" target="_blank" rel="noopener">Telegram &#183; @syntoera</a>
+      <a href="https://yuriusvento.github.io/syntopolis/" target="_blank" rel="noopener">
+        Website &#183; Texts & Documents
+      </a>
+      <a href="manifest_ru.html">&#1056;&#1091;&#1089;&#1089;&#1082;&#1072;&#1103; &#1074;&#1077;&#1088;&#1089;&#1080;&#1103;</a>
+    </nav>
 
-                  <p>
-                            If we look at this process on the scale of humanity&#8217;s spiritual history, it becomes clear that
-                            much of what is now being expressed in the language of science and evolution had already, in
-                            its own way, been formulated in teachings directed toward liberation from suffering and the
-                            revelation of love as the foundation of being. The Buddha spoke of the path toward the cessation
-                            of suffering. Christ affirmed: &#8220;God is love.&#8221; In the coordinates of the Synt&#333; Age, this vector
-                            continues to unfold as <b>ag&#225;pe &#8212; &#7936;&#947;&#940;&#960;&#951;</b> and the <b>hedonism of higher pleasure</b>: the
-                  striving for a state of the world in which pleasure, joy, and co-belonging cease to be the
-                  privilege of the few and become the natural background of life within the unified human organism.
-                  The fundamental novelty lies in the method of embodiment: today, this centuries-old demand for
-                  liberation from suffering and the affirmation of love can be realized without wars and violence
-                  &#8212; through voluntary Synt&#333;, inner maturation, and the coordinated architecture of a new society.
-                  </p>
-          
-                <p>
-                          This transition brings us to a new form of human community. Humanity is conceived as a single
-                          living organism, in which every person is a cell &#8212; unique, necessary, and possessing one&#8217;s own
-                          function. The value of each cell is not measured by origin, status, or the volume of accumulated
-                          capital, but is determined by its contribution to the health, harmony, and development of the
-                          whole. In such an organism, conflicts do not become the primary logic of existence: instead,
-                          coordinated mechanisms of self-regulation, coordination, and mutual support are at work. The
-                          Synt&#333; Age is a transition from a fragmented set of competing structures to conscious unity, in
-                          which personal freedom, cultural diversity, and individual paths of development are preserved
-                          and strengthened through inclusion in the common organism.
-                </p>
+    <section class="synopsis">
+      <p class="lead">
+        <b>The Manifesto of the Synt&#333; Age</b> is the entry into the system, the start screen of the
+        operating system of a new society. It answers the question: why must humanity leave the model
+        of the struggle for survival and transition to a model of Synt&#333;, pleasure, growth, and
+        co-belonging?
+      </p>
 
-                  <p>
-                            The essence of further development is the transition from a society of struggle and hierarchies
-                            to a society of Synt&#333;, where humanity lives as a unified organism. In practice, this means a
-                            unified basic operating system of education for all people, the ethics of hedonism of higher
-                            pleasure as the foundation of decision-making, the structuring of society by competencies
-                            instead of the power of origin and capital, and the creation of a new habitat in which basic
-                            needs are systemically met, while energy is directed toward creation, knowledge, co-belonging,
-                            and further evolution.
-                  </p>
+      <p><b>The Manifesto establishes the following:</b></p>
 
-                  <p>
-                            This transition is not an abstract dream or an ephemeral metaphor. It is conceived as a clearly
-                            structured process that can take place only on the basis of goodwill and the conscious inner
-                            decision of each person who chooses this path. No external pressure, coercion, or manipulation
-                            can give birth to a society of Synt&#333;: it can grow only out of free consent, out of a personal
-                            choice to share the values, ethics, and practices of the new society.
-                  </p>
+      <ul class="points">
+        <li>
+          the human being ceases to be a consumer of resources and a cog in production, and becomes
+          aware of oneself as a <b>cell of the unified organism of humanity</b>;
+        </li>
+        <li>
+          the foundation of life becomes the pursuit of pleasure in its highest sense:
+          <b>love, ag&#225;pe &#8212; &#7936;&#947;&#940;&#960;&#951;</b>, the transmission of knowledge, creation, and participation
+          in the joy of others;
+        </li>
+        <li>
+          <b>Synt&#333;polis</b> is a step toward the next stage of evolution, not a utopian fantasy.
+          The function of the Manifesto is an emotional, semantic, and value-based initialization.
+          Through it, a person first comes into contact with the concept of Synt&#333; as inner consent
+          and sees that a society is possible in which higher pleasure becomes the norm, not the
+          exception;
+        </li>
+        <li>
+          <b>the Synt&#333; Age</b> is the next stage of evolution, not a utopian fantasy.
+        </li>
+      </ul>
 
-                  <p>
-                            It is precisely so that this choice may be made consciously that this book has been written.
-                            It is not merely a collection of texts, but a new operating system of society, in which the
-                            Synt&#333; Age and Synt&#333;polis are described as an integral architecture. This system unfolds according
-                            to the logic of seven main positions discussed earlier: the manifesto, the constitutional
-                            framework, the ethics of hedonism of higher pleasure, the vision of the universal evolution of
-                            being, the unified foundation of education, the structuring of society by competencies, and the
-                            creation of a new habitat. Together, these seven interconnected modules form the path of
-                            transition from a world of struggle and fragmentation to a world of Synt&#333;, pleasure, knowledge,
-                            and co-belonging.
-                  </p>
-          </section>section>
+      <p>
+        All other documents of the <b>Synt&#333; Age</b> and <b>Synt&#333;polis</b> must be a logical continuation
+        of the Manifesto and must not contradict its spirit.
+      </p>
 
-            <div class="footer">&#169; Synt&#333;</div>div>
-      </main>main>
-  </body>
-</html>html>
+      <h2 class="manifest-title">The Manifesto of the Synt&#333; Age / Synt&#333;</h2>
+      <div class="date">Synt&#333;polis &#183; 26 Dec 2025</div>
 
-                  </p>
-                </p></b></b>
-                  </p>
-                  </p>
-                        </li></b></b>
-                          </li>
-                        </li></p></b></h1>
-  </body>
-    </style></title>
-  </head>
+      <p>
+        Humanity has entered a phase of extreme intensification of the global political and economic
+        crisis. Models born in an era of struggle for power, resources, and influence have exhausted
+        their developmental potential and are increasingly less capable of providing people with a
+        sense of security, justice, and future perspective. Local and global conflicts, inequality,
+        the fragmentation of societies, and destructive informational noise show that the historically
+        inherited forms of organizing collective human existence no longer correspond to the scale of
+        the challenges and the level of accumulated knowledge.
+      </p>
+
+      <p>
+        At the same time, we live in a unique moment in the history of humanity. For the first time,
+        the entire globe has been technically united into a single whole: information networks, the
+        global economy, logistics, and instant communication technologies have transformed the planet
+        into a continuously connected system. Yet this unity remains primarily technical. Humanity
+        still has no common conceptual foundation, no shared image of the future, and no agreed unified
+        ethics corresponding to this new level of interconnectedness and mutual dependence.
+      </p>
+
+      <p>
+        It is precisely at this historical moment that a window of opportunity opens. Before us stands
+        an unprecedented task and privilege: to use the experience of all previous systems &#8212; religious,
+        philosophical, political, economic, and cultural &#8212; not as a field of endless dispute, but as a
+        dataset, as an accumulated library of attempts to build a just and meaningful society. We can
+        regard past models as stages in the evolution of a single experiment and, on this basis, form
+        a new, integral system for organizing the human community.
+      </p>
+
+      <p>
+        Today humanity possesses open information, the scientific method, and technologies of
+        collective thinking that allow this choice to be made consciously. Under conditions of such
+        transparency and accumulated experience, the only justified path becomes the path of science
+        and evolution &#8212; a path based on verifiable knowledge, honest analysis of errors, and the
+        ability to change structures when data reveal their failure. This path presupposes the use
+        of all the intellectual and creative resources of humanity not for systems to struggle against
+        one another, but for the transition to the next level of organizing life.
+      </p>
+
+      <p>
+        If we look at this process on the scale of humanity&#8217;s spiritual history, it becomes clear that
+        much of what is now being expressed in the language of science and evolution had already, in
+        its own way, been formulated in teachings directed toward liberation from suffering and the
+        revelation of love as the foundation of being. The Buddha spoke of the path toward the cessation
+        of suffering. Christ affirmed: &#8220;God is love.&#8221; In the coordinates of the Synt&#333; Age, this vector
+        continues to unfold as <b>ag&#225;pe &#8212; &#7936;&#947;&#940;&#960;&#951;</b> and the <b>hedonism of higher pleasure</b>: the
+        striving for a state of the world in which pleasure, joy, and co-belonging cease to be the
+        privilege of the few and become the natural background of life within the unified human organism.
+        The fundamental novelty lies in the method of embodiment: today, this centuries-old demand for
+        liberation from suffering and the affirmation of love can be realized without wars and violence
+        &#8212; through voluntary Synt&#333;, inner maturation, and the coordinated architecture of a new society.
+      </p>
+
+      <p>
+        This transition brings us to a new form of human community. Humanity is conceived as a single
+        living organism, in which every person is a cell &#8212; unique, necessary, and possessing one&#8217;s own
+        function. The value of each cell is not measured by origin, status, or the volume of accumulated
+        capital, but is determined by its contribution to the health, harmony, and development of the
+        whole. In such an organism, conflicts do not become the primary logic of existence: instead,
+        coordinated mechanisms of self-regulation, coordination, and mutual support are at work. The
+        Synt&#333; Age is a transition from a fragmented set of competing structures to conscious unity, in
+        which personal freedom, cultural diversity, and individual paths of development are preserved
+        and strengthened through inclusion in the common organism.
+      </p>
+
+      <p>
+        The essence of further development is the transition from a society of struggle and hierarchies
+        to a society of Synt&#333;, where humanity lives as a unified organism. In practice, this means a
+        unified basic operating system of education for all people, the ethics of hedonism of higher
+        pleasure as the foundation of decision-making, the structuring of society by competencies
+        instead of the power of origin and capital, and the creation of a new habitat in which basic
+        needs are systemically met, while energy is directed toward creation, knowledge, co-belonging,
+        and further evolution.
+      </p>
+
+      <p>
+        This transition is not an abstract dream or an ephemeral metaphor. It is conceived as a clearly
+        structured process that can take place only on the basis of goodwill and the conscious inner
+        decision of each person who chooses this path. No external pressure, coercion, or manipulation
+        can give birth to a society of Synt&#333;: it can grow only out of free consent, out of a personal
+        choice to share the values, ethics, and practices of the new society.
+      </p>
+
+      <p>
+        It is precisely so that this choice may be made consciously that this book has been written.
+        It is not merely a collection of texts, but a new operating system of society, in which the
+        Synt&#333; Age and Synt&#333;polis are described as an integral architecture. This system unfolds according
+        to the logic of seven main positions discussed earlier: the manifesto, the constitutional
+        framework, the ethics of hedonism of higher pleasure, the vision of the universal evolution of
+        being, the unified foundation of education, the structuring of society by competencies, and the
+        creation of a new habitat. Together, these seven interconnected modules form the path of
+        transition from a world of struggle and fragmentation to a world of Synt&#333;, pleasure, knowledge,
+        and co-belonging.
+      </p>
+    </section>
+
+    <div class="footer">
+      <div>&#169; Synt&#333;</div>
+      <div class="footer-links">
+        <a href="faq_en.html">FAQ · EN</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
